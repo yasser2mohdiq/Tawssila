@@ -1,0 +1,4 @@
+:host { display: block; }
+.topbar { height: 76px; display: flex; align-items: center; gap: 20px; padding: 0 34px; background: white; border-bottom: 1px solid #e8edf3; }
+.topbar-spacer { flex: 1; }.welcome { color: #526176; font-size: 14px; }.mobile-brand { display: none; align-items: center; gap: 9px; color: #112d50; font-size: 18px; }.brand-mark { color: #f18837; }
+@media (max-width: 760px) { .topbar { height: 64px; padding: 0 16px; }.mobile-brand { display: flex; }.welcome { display: none; }.logout span { display: none; } }

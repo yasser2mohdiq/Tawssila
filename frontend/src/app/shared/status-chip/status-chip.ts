@@ -1,0 +1,4 @@
+import { Component, input } from '@angular/core';
+import { Statut } from '../../core/models/entities';
+@Component({ selector: 'app-status-chip', template: '<span class="chip" [attr.data-status]="status()">{{ label() }}</span>', styles: [':host{display:inline-block}.chip{display:inline-flex;padding:5px 10px;border-radius:99px;background:#edf2f7;color:#536579;font-size:12px;font-weight:650}.chip[data-status="LIVRE"]{background:#e6f6ed;color:#20734a}.chip[data-status="ECHEC_LIVRAISON"],.chip[data-status="ANNULE"]{background:#ffeded;color:#a53c3c}.chip[data-status="EN_TRANSIT"],.chip[data-status="EN_COURS_DE_LIVRAISON"]{background:#e8f2ff;color:#2865a0}.chip[data-status="EN_ATTENTE"]{background:#fff4df;color:#93640c}'] })
+export class StatusChip { readonly status = input.required<Statut>(); readonly label = input(''); }

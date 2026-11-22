@@ -1,0 +1,5 @@
+:host { display: block; min-height: 100dvh; }
+.shell { display: flex; min-height: 100dvh; }
+.workspace { min-width: 0; flex: 1; }
+.page-content { padding: 30px clamp(18px, 4vw, 52px); max-width: 1440px; margin-inline: auto; }
+@media (max-width: 760px) { .shell { display: block; } .page-content { padding: 22px 16px 88px; } }

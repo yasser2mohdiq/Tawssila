@@ -1,0 +1,4 @@
+import { Component, input } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+@Component({ selector: 'app-stat-card', imports: [MatIconModule], template: '<article class="stat"><span class="icon"><mat-icon>{{ icon() }}</mat-icon></span><div><p>{{ label() }}</p><strong>{{ value() }}</strong><small>{{ note() }}</small></div></article>', styles: [':host{display:block}.stat{display:flex;align-items:center;gap:15px;padding:20px;background:white;border:1px solid #e9eef4;border-radius:14px;box-shadow:0 4px 16px #18365608}.icon{display:grid;place-items:center;width:45px;height:45px;background:#fff2e8;color:#df8131;border-radius:12px}p{margin:0 0 5px;color:#718096;font-size:13px}strong{display:block;color:#102b4e;font-size:24px}small{color:#8b9aad}'] })
+export class StatCard { readonly label = input.required<string>(); readonly value = input.required<string | number>(); readonly icon = input('inventory_2'); readonly note = input(''); }
